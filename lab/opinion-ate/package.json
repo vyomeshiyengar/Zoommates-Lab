@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@testing-library/user-event": "14.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint src",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -22,30 +23,23 @@
       "react-app",
       "react-app/jest",
       "prettier"
-    ], 
+    ],
     "plugins": [
       "prettier",
       "cypress"
-    ], 
+    ],
     "env": {
-      "cypress/globals": true 
+      "cypress/globals": true
     },
-    "rules": { 
+    "rules": {
       "prettier/prettier": "warn"
     }
   },
-  "prettier": { 
-    "arrowParens": "avoid", 
-    "bracketSpacing": false, 
-    "singleQuote": true, 
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "singleQuote": true,
     "trailingComma": "all"
-  },
-  "scripts": {
-    "start": "react-scripts start", 
-    "build": "react-scripts build", 
-    "test": "react-scripts test", 
-    "lint": "eslint src",
-    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
