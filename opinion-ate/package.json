@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@testing-library/user-event": "14.4.3",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-prettier": "4.2.1",
@@ -19,17 +19,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cypress": "cypress open",
     "lint": "eslint src",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest", 
+      "react-app/jest",
       "prettier"
     ],
     "plugins": [
-      "prettier", 
+      "prettier",
       "cypress"
     ],
     "env": {
@@ -56,5 +57,8 @@
     "bracketSpacing": false,
     "singleQuote": true,
     "trailingComma": "all"
-    }
+  },
+  "devDependencies": {
+    "cypress": "10.9.0"
+  }
 }
