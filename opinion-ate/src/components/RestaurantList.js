@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export default function RestaurantList({ loadRestaurants, restaurants }) {
-    useEffect(() => {
+  useEffect(() => {
         loadRestaurants();
     }, [loadRestaurants]);
 
