@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Counter from './features/counter/Counter';
+import IncrementByAmount from './features/counter/IncrementByAmount';
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Counter></Counter>
+    <div>
+      <Counter></Counter>
+      <IncrementByAmount></IncrementByAmount>
+    </div>
   );
 }
 
